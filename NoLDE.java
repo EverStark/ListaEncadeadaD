@@ -1,5 +1,5 @@
 public class NoLDE {
-	private Object elemento;//genérico
+	private Object elemento;//genï¿½rico
 	private NoLDE proximo;
 	private NoLDE anterior;
 		
