@@ -63,6 +63,16 @@ public class ListaDuplamenteEncadeada {
 	
 	public void RemoveF() {
 		//TODO
+		if(primeira == null) {
+			throw new IllegalArgumentException("Lista Vazia.");
+		}
+		ultima = ultima.getAnterior();
+		if(ultima != null) {
+			ultima.setProximo(null);
+		}else {
+			primeira = null;
+		}
+		contador--;
 	}
 	
 	public boolean Verifica(Object obj) {
